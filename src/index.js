@@ -1,7 +1,7 @@
 const card = document.getElementById("character-bar");
 const charName = document.getElementById("name");
 const charImage = document.getElementById("image");
-const voteCount = document.getElementById("vote-count");  // Fixed typo
+const voteCount = document.getElementById("vote-count");  
 const voteForm = document.querySelector("#votes-form");
 const inputVote = document.querySelector("#votes");
 let selectedChar = null;
@@ -26,7 +26,7 @@ function displayCharacter(character) {
     charImage.src = character.image;
     charImage.alt = character.name;
     voteCount.textContent = character.votes;
-    selectedChar = character;  // Ensure the selected character is updated
+    selectedChar = character;  
 }
 
 voteForm.addEventListener("submit", (e) => {
